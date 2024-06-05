@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGX Public Holiday Workspace Access</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>KGX Public Holiday Workspace Access Form</h1>
+        <form action="/submit" method="post">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="name">{{ form.name.label }}</label><br>
+                {{ form.name(size=32) }}
+            </div>
+            <div class="form-group">
+                <label for="department">{{ form.department.label }}</label><br>
+                {{ form.department(size=32) }}
+            </div>
+            <div class="form-group">
+                <label for="purpose">{{ form.purpose.label }}</label><br>
+                {{ form.purpose(size=32) }}
+            </div>
+            <div class="form-group">
+                <label for="entry_time">{{ form.entry_time.label }}</label><br>
+                {{ form.entry_time() }}
+            </div>
+            <div class="form-group">
+                <label for="exit_time">{{ form.exit_time.label }}</label><br>
+                {{ form.exit_time() }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn") }}
+            </div>
+        </form>
+    </div>
+</body>
+</html>
