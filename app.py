@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, request, render_template, redirect
 from models import db, Attendance
 from forms import AttendanceForm
@@ -64,3 +65,5 @@ if __name__ == '__main__':
     app.run(debug=True)
     
     
+=======
+>>>>>>> main
