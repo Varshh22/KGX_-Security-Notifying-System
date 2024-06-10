@@ -53,7 +53,7 @@ def job():
             email_service.send_email(pdf_filename)
 
 # Schedule the job to run daily at a specific time
-schedule_time = "21:25"  # Set the time you want the job to run
+schedule_time = "22:47"  # Set the time you want the job to run
 schedule.every().day.at(schedule_time).do(job)
 
 if __name__ == "__main__":

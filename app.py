@@ -5,13 +5,17 @@ import generate_pdf
 import email_service
 import access_pass
 from datetime import datetime
-
+import subprocess
+import threading
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///attendance.db'  # Update if needed
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'your_secret_key'
 db.init_app(app)
 
+def run_scheduler():
+    subprocess.run(["python", "scheduler.py"])
+    
 @app.route('/')
 def index():
     form = AttendanceForm()
@@ -45,4 +49,7 @@ def submit():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
+
+    scheduler_thread = threading.Thread(target=run_scheduler)
+    scheduler_thread.start()
     app.run(debug=True)
