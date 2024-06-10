@@ -1,7 +1,6 @@
 from flask import Flask, request, render_template, redirect
 from models import db, Attendance
 from forms import AttendanceForm
-from threading import Thread  # Import Thread
 import generate_pdf
 import email_service
 import access_pass
@@ -46,7 +45,6 @@ def submit():
         
         return redirect('/')
     return render_template('form.html', form=form)
-
 
 if __name__ == '__main__':
     with app.app_context():
