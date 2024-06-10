@@ -51,6 +51,7 @@ def job():
             data = Attendance.query.all()
             pdf_filename = generate_pdf.generate_pdf(data)
             email_service.send_email(pdf_filename)
+            
 
 # Schedule the job to run daily at a specific time
 schedule_time = "22:47"  # Set the time you want the job to run
