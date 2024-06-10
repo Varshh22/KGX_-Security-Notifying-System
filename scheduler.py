@@ -4,20 +4,18 @@ from models import db, Attendance
 import generate_pdf
 import email_service
 from flask import Flask
+import os
 from datetime import datetime, timedelta
-import logging
 
-# Initialize the Flask app
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///attendance.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
-# Setup logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
 # Function to check if tomorrow is a public holiday
 def is_tomorrow_public_holiday():
+    # Add logic to check if tomorrow is a public holiday
+    # Example list of public holidays (dates should be in 'YYYY-MM-DD' format)
     public_holidays = [
     "2024-01-01",
     "2024-06-11",
@@ -50,7 +48,6 @@ def is_tomorrow_public_holiday():
 def job():
     if is_tomorrow_public_holiday():
         with app.app_context():
-            logging.info('Public holiday detected. Generating PDF and sending email.')
             data = Attendance.query.all()
             pdf_filename = generate_pdf.generate_pdf(data)
             email_service.send_email(pdf_filename)
@@ -59,8 +56,10 @@ def job():
 # Schedule the job to run daily at a specific time
 schedule_time = "22:59"  # Set the time you want the job to run
 schedule.every().day.at(schedule_time).do(job)
-logging.info(f'Scheduler set to run daily at {schedule_time}')
 
-
-
-
+if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
