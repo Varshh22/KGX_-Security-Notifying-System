@@ -39,7 +39,7 @@ def job():
         logging.info('No public holiday tomorrow.')
 
 # Schedule the job to run daily at a specific time
-schedule_time = "21:25"  # Set the time you want the job to run
+schedule_time = "22:41"  # Set the time you want the job to run
 schedule.every().day.at(schedule_time).do(job)
 logging.info(f'Scheduler set to run daily at {schedule_time}')
 
@@ -54,5 +54,4 @@ def run_scheduler():
     except KeyboardInterrupt:
         logging.info('Scheduler stopped.')
 
-if __name__ == "__main__":
-    run_scheduler()
+

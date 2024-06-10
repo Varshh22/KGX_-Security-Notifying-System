@@ -49,3 +49,12 @@ def submit():
         return redirect('/')
     return render_template('form.html', form=form)
 
+
+if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
+# Start the scheduler in a separate thread
+    scheduler_thread = Thread(target=scheduler.run_scheduler)
+    scheduler_thread.start()
+
+    app.run(debug=True)
