@@ -38,7 +38,7 @@ def submit():
         
         # Generate PDF and send email
         pdf_filename = generate_pdf.generate_pdf([new_entry])  # Pass as a list
-        email_service.send_email(pdf_filename)
+        #email_service.send_email(pdf_filename)
         
         # Generate and send access pass
         access_pass.send_access_pass(new_entry)
