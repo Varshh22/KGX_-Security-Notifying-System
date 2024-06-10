@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, request, render_template, redirect
 from models import db, Attendance
 from forms import AttendanceForm
@@ -49,20 +48,4 @@ def submit():
         
         return redirect('/')
     return render_template('form.html', form=form)
-
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-
-=======
-    
-    # Start the scheduler in a separate thread
-    scheduler_thread = Thread(target=scheduler.run_scheduler)
-    scheduler_thread.start()
-
-    
->>>>>>> main
-    app.run(debug=True)
-    
-    
 
