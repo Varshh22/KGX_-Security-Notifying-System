@@ -61,15 +61,6 @@ schedule_time = "22:59"  # Set the time you want the job to run
 schedule.every().day.at(schedule_time).do(job)
 logging.info(f'Scheduler set to run daily at {schedule_time}')
 
-def run_scheduler():
-    with app.app_context():
-        db.create_all()
-    
-    try:
-        while True:
-            schedule.run_pending()
-            time.sleep(1)
-    except KeyboardInterrupt:
-        logging.info('Scheduler stopped.')
+
 
 
