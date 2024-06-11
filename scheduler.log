@@ -1,0 +1,75 @@
+2024-06-11 09:35:00,426 - Scheduler started
+2024-06-11 09:35:00,473 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:35:00,473 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:35:00,508 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:35:02,728 - Scheduler started
+2024-06-11 09:35:02,747 -  * Debugger is active!
+2024-06-11 09:35:02,751 -  * Debugger PIN: 349-973-918
+2024-06-11 09:35:09,306 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:35:09,307 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:35:09,308 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:35:10,160 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:35:13,826 - Scheduler started
+2024-06-11 09:35:13,866 -  * Debugger is active!
+2024-06-11 09:35:13,873 -  * Debugger PIN: 349-973-918
+2024-06-11 09:35:18,464 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:35:18,465 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:35:18,466 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:35:19,055 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:36:19,949 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:36:19,949 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:36:19,966 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:36:21,376 -  * Debugger is active!
+2024-06-11 09:36:21,379 -  * Debugger PIN: 349-973-918
+2024-06-11 09:36:31,806 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:36:31,806 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:36:31,838 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:36:34,414 -  * Debugger is active!
+2024-06-11 09:36:34,417 -  * Debugger PIN: 349-973-918
+2024-06-11 09:36:53,298 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\app.py', reloading
+2024-06-11 09:36:53,299 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\app.py', reloading
+2024-06-11 09:36:53,756 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:36:54,967 -  * Debugger is active!
+2024-06-11 09:36:54,973 -  * Debugger PIN: 349-973-918
+2024-06-11 09:36:56,000 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\app.py', reloading
+2024-06-11 09:36:56,129 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:37:45,986 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:37:45,987 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:37:46,006 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:37:47,050 -  * Debugger is active!
+2024-06-11 09:37:47,054 -  * Debugger PIN: 349-973-918
+2024-06-11 09:38:04,954 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:38:04,954 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:38:04,982 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:38:05,968 -  * Debugger is active!
+2024-06-11 09:38:05,972 -  * Debugger PIN: 349-973-918
+2024-06-11 09:38:39,741 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:38:39,741 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:39:17,057 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:39:17,057 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:39:17,078 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:39:17,991 -  * Debugger is active!
+2024-06-11 09:39:17,994 -  * Debugger PIN: 349-973-918
+2024-06-11 09:39:49,423 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:39:49,423 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:39:49,424 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\scheduler.py', reloading
+2024-06-11 09:39:55,602 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 09:39:55,604 - [33mPress CTRL+C to quit[0m
+2024-06-11 09:39:55,625 -  * Restarting with watchdog (windowsapi)
+2024-06-11 09:39:56,735 -  * Debugger is active!
+2024-06-11 09:39:56,740 -  * Debugger PIN: 349-973-918
+2024-06-11 09:40:24,179 -  * Detected change in 'C:\\Python312\\Lib\\smtplib.py', reloading
+2024-06-11 09:40:24,212 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\email_service.py', reloading
+2024-06-11 09:40:24,213 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\email_service.py', reloading
+2024-06-11 09:40:24,229 -  * Detected change in 'C:\\Python312\\Lib\\email\\mime\\multipart.py', reloading
+2024-06-11 09:40:24,245 -  * Detected change in 'C:\\Python312\\Lib\\email\\mime\\text.py', reloading
+2024-06-11 09:40:24,261 -  * Detected change in 'C:\\Python312\\Lib\\email\\mime\\application.py', reloading
+2024-06-11 09:40:25,068 -  * Restarting with watchdog (windowsapi)

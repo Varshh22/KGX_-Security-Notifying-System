@@ -5,7 +5,7 @@ from email.mime.application import MIMEApplication
 
 def send_email(pdf_filename):
     sender_email = "nagaroshan09@gmail.com"
-    receiver_email = "nishanthmn07@gmail.com"
+    receiver_email = "nagaroshan09@gmail.com"
     smtp_server = "smtp.gmail.com"
     smtp_port = 587  # SSL port for Gmail
     smtp_password = "ssseljqeddntdiin"
