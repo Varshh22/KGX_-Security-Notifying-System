@@ -1,0 +1,11 @@
+2024-06-11 11:27:18,581 -  * Debugger is active!
+2024-06-11 11:27:18,585 -  * Debugger PIN: 349-973-918
+2024-06-11 11:29:18,546 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-11 11:29:18,546 - [33mPress CTRL+C to quit[0m
+2024-06-11 11:29:18,577 -  * Restarting with watchdog (windowsapi)
+2024-06-11 11:29:19,748 -  * Debugger is active!
+2024-06-11 11:29:19,751 -  * Debugger PIN: 349-973-918
+2024-06-11 11:29:25,167 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\app.py', reloading
+2024-06-11 11:29:25,169 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\app.py', reloading
+2024-06-11 11:29:25,170 -  * Detected change in 'C:\\Users\\ROSHAN\\Desktop\\kgx pass\\KGX_Security-Notifying-System\\app.py', reloading

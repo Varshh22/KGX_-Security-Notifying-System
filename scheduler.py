@@ -56,7 +56,7 @@ def job():
             
 
 # Schedule the job to run daily at a specific time
-schedule_time = "10:47"  # Set the time you want the job to run
+schedule_time = "11:39"  # Set the time you want the job to run
 schedule.every().day.at(schedule_time).do(job)
 
 if __name__ == "__main__":
