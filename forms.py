@@ -4,7 +4,7 @@ from wtforms.validators import DataRequired
 
 class AttendanceForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
-    department = StringField('Department and Section', validators=[DataRequired()])
+    department = StringField('Department and Section / year', validators=[DataRequired()])
     purpose = StringField('Purpose of Using the Workspace', validators=[DataRequired()])
     entry_time = TimeField('Time of Entry', validators=[DataRequired()])
     exit_time = TimeField('Time of Exit', validators=[DataRequired()])
