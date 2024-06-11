@@ -18,7 +18,7 @@ def is_tomorrow_public_holiday():
     # Example list of public holidays (dates should be in 'YYYY-MM-DD' format)
     public_holidays = [
     "2024-01-01",
-    "2024-06-11",
+    "2024-06-12",
     "2024-01-14",
     "2024-01-26",
     "2024-04-12",
@@ -48,13 +48,15 @@ def is_tomorrow_public_holiday():
 def job():
     if is_tomorrow_public_holiday():
         with app.app_context():
-            data = Attendance.query.all()
-            pdf_filename = generate_pdf.generate_pdf(data)
-            email_service.send_email(pdf_filename)
+            today = datetime.now().date()
+            data = Attendance.query.filter(Attendance.date_submitted == today).all()
+            if data:
+                pdf_filename = generate_pdf.generate_pdf(data)
+                email_service.send_email(pdf_filename)
             
 
 # Schedule the job to run daily at a specific time
-schedule_time = "23:28"  # Set the time you want the job to run
+schedule_time = "09:42"  # Set the time you want the job to run
 schedule.every().day.at(schedule_time).do(job)
 
 if __name__ == "__main__":
