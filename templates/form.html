@@ -5,11 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KGX Public Holiday Workspace Access</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .success-message {
+            display: none;
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>KGX Public Holiday Workspace Access Form</h1>
-        <form action="/submit" method="post">
+        
+        <!-- Success message div -->
+        <div id="success-message" class="success-message">Submitted Successfully</div>
+        
+        <!-- Flash messages (if any) -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- Form -->
+        <form id="attendance-form" action="/submit" method="post">
             {{ form.hidden_tag() }}
             <div class="form-group">
                 <label for="name">{{ form.name.label }}</label><br>
@@ -36,5 +65,34 @@
             </div>
         </form>
     </div>
+
+    <script>
+        document.getElementById('attendance-form').onsubmit = function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            
+            // Make an AJAX request to submit the form data
+            var form = document.getElementById('attendance-form');
+            var formData = new FormData(form);
+
+            fetch('/submit', {
+                method: 'POST',
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    // Hide the form
+                    document.getElementById('attendance-form').classList.add('hidden');
+                    // Display the success message
+                    document.getElementById('success-message').style.display = 'block';
+
+                    // Add an event listener to reload the page on click
+                    document.body.addEventListener('click', function() {
+                        location.reload();
+                    }, { once: true });
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
 </body>
 </html>

@@ -17,7 +17,7 @@ LOCK_FILE = "scheduler.lock"
 # Function to check if tomorrow is a public holiday
 def is_tomorrow_public_holiday():
     public_holidays = [
-        "2024-01-01", "2024-06-12", "2024-01-14", "2024-01-26", "2024-04-12",
+        "2024-01-01", "2024-06-13", "2024-01-14", "2024-01-26", "2024-04-12",
         "2024-04-14", "2024-05-01", "2024-08-15", "2024-08-23", "2024-10-02",
         "2024-10-22", "2024-12-25", "2024-01-07", "2024-01-14", "2024-01-21",
         "2024-01-28", "2024-02-04", "2024-02-11", "2024-02-18", "2024-02-25",
@@ -63,7 +63,7 @@ def job():
         remove_lock_file()
 
 # Schedule the job to run daily at a specific time
-schedule_time = "20:45"  # Set the time you want the job to run in HH:MM format
+schedule_time = "13:40"  # Set the time you want the job to run in HH:MM format
 schedule.every().day.at(schedule_time).do(job)
 
 if __name__ == "__main__":

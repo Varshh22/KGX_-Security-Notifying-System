@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, flash,request, render_template, redirect
 from models import db, Attendance
 from forms import AttendanceForm
 import generate_pdf
@@ -43,6 +43,7 @@ def submit():
         # Generate and send access pass
         access_pass.send_access_pass(new_entry)
         
+        flash('Submitted Successfully!','success')
         return redirect('/')
     return render_template('form.html', form=form)
 
